@@ -5,9 +5,9 @@ public class UsaPictureBuilder extends PictureBuilder {
 
     @Override
     public UsaPictureBuilder setBasicParams(String name, int year, String author) {
-        picture.setName("USA! USA! USA!" + name);
+        picture.setAuthor("USA! USA! USA! " + author);
+        picture.setName("USA! USA! USA! " + name);
         picture.setYear(year);
-        picture.setAuthor(author);
         return this;
     }
 
@@ -27,8 +27,8 @@ public class UsaPictureBuilder extends PictureBuilder {
 
     @Override
     public UsaPictureBuilder setCategoryParms(String category, String theme) {
-        picture.setCategory(category);
-        picture.setTheme(theme);
+        picture.setCategory("USA! USA! USA! " + category);
+        picture.setTheme("USA! USA! USA! " + theme);
         return this;
     }
 }
